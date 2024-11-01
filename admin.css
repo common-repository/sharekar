@@ -1,0 +1,100 @@
+.sharekar-tabs-wrapper *{
+box-sizing:border-box;
+}
+
+.sharekar-tabs-wrapper input{
+display:none;
+}
+
+.sharekar-tabs-wrapper{
+background-color:#FFF;
+margin-right: 20px;
+box-sizing:border-box;
+}
+.sharekar-tabs-wrapper > label > div{
+display:inline-block;
+padding:10px;
+border: 2px solid transparent;
+font-weight:400;
+color: #030220;
+}
+
+.sharekar-tabs-wrapper input:checked ~ div{
+border-bottom: 2px solid #030220;
+}
+
+.sharekar-tab-wrapper{
+background-color:#FFF;
+padding: 0 10px;
+margin-right: 20px;
+border-radius:2px;
+}
+
+.sharekar-tab-wrapper [type=submit]{
+margin-left:15px;
+}
+
+.sharekar-tab-heading{
+border-bottom:1px dashed #eee;
+padding:20px 0 20px 15px;
+}
+
+.sharekar-toggle-wrapper input{
+display:none;
+}
+
+.sharekar-toggle-wrapper .sharekar-toggle{
+position:relative;
+width:45px;
+height:24px;
+background-color: #dfdfdf;
+border-radius:4px;
+cursor:pointer;
+transition: background-color .4s;
+}
+
+.sharekar-toggle-wrapper .sharekar-toggle:before {
+content: "";
+background-color: #fff;
+top:50%;
+transform: translateY(-50%);
+height: 16px;
+width: 16px;
+left: 4px;
+position: absolute;
+transition: transform .4s;
+border-radius:4px;
+}
+
+.sharekar-toggle-wrapper input:checked ~ .sharekar-toggle{
+background-color: #0f0c5c;
+}
+
+.sharekar-toggle-wrapper input:checked ~ .sharekar-toggle:before {
+transform: translate(20px, -50%);
+}
+
+.sharekar-tab-wrapper table{
+width: 100%;
+}
+
+.sharekar-tab-wrapper table th {
+font-weight: 600;
+text-align: left;
+width: 15%;
+padding: 20px 15px;
+vertical-align:top;
+}
+
+#sharekar-social-position li{
+display:flex;
+justify-content: space-between;
+border: 1px solid #d1d1d1;
+padding: 10px;
+background-color:#eee;
+width:200px;
+}
+	
+#sharekar-social-position li input{
+margin-left: 10px;
+}
